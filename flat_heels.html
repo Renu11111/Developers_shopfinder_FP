@@ -5,18 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>T-Shirts - Shop Finder</title>
     <link rel="stylesheet" href="css/main.css" />
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
     <div class="banner">
         <div class="menu">
             <header>
-                <a href="index.html"><img src="images/logo.png" alt="Shop Finder Logo"></a>
+                <a href="index.html"><img id="logo"  src="images/logo.png" alt="Shop Finder Logo"></a>
             </header>
             <nav>
                 <ul class="navbar">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link text-white dropbtn" href="javascript:void(0)">Section</a>
+                        <div class="dropdown-content">
+                            <a href="shirts.html">Shirt</a>
+                            <a href="tshirts.html">T-Shirt</a>
+                            <a href="tops.html">Top</a>
+                            <a href="shorts.html">Shorts</a>
+                            <a href="watches.html">Watches</a>
+                            <a href="womendenim.html">Denim</a>
+                            <a href="flat_heels.html">Flat &amp; Heels</a>
+                            <a href="shoe.html">Shoe</a>
+                        </div>                               
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white" href="products.html">Products</a>
@@ -31,7 +45,7 @@
     <div class="container">
         <main role="main">            
             <div class="text-center">
-                <h1 class="display-4">All Flat & Heels</h1>
+                <h1 class="display-4" id="heading_message" >All Flat & Heels</h1>
             </div>
             <div class="row categories" >
                 <div class="col">
@@ -90,5 +104,6 @@
             <p class="text-center">© Copyright ShopFinder 2021 </p>
         </div>
     </footer>
+    <script src="js/change.js"></script>
 </body>
 </html>
