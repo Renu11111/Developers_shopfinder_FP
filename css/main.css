@@ -26,10 +26,11 @@ nav{
 }
 .navbar{
     list-style: none;    
+    overflow: hidden;
 }
 .navbar li{
     display: inline-block;
-    width:30%;
+    width:20%;
 }
 .navbar li a{
     color:white;
@@ -152,6 +153,36 @@ footer {
     max-width: 25%;
 }
 
+/* Drop down menu code is task */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  .dropdown-content a {
+    color: black !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {background-color: #f1f1f1;}
+  .dropdown:hover .dropbtn {
+    text-decoration: underline;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .text-red{
+      color:red;
+  }
+.text-black{
+    color:black;
+}
 @media screen and (max-width: 768px) {
     .menu{
         flex-direction: column;
